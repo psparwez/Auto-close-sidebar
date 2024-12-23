@@ -1,0 +1,54 @@
+{
+  "name": "auto-close-sidebar",
+  "displayName": "Auto Close Sidebar",
+  "description": "Automatically closes the sidebar when focus is lost or on editor interaction.",
+  "version": "0.0.1",
+  "publisher": "psparwez",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "auto-close-sidebar.closeSidebar",
+        "title": "Auto Close Sidebar",
+        "category": "View"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "keywords": [
+    "vscode",
+    "sidebar",
+    "auto-close-sidebar",
+    "extension"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psparwez/Auto-close-sidebar/issues"
+  },
+  "homepage": "https://github.com/psparwez/Auto-close-sidebar#readme"
+}
